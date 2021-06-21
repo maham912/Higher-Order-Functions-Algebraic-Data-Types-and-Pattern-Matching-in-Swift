@@ -80,9 +80,6 @@ func isEmpty() -> Bool{
 
 
     func map<B>(mapper: (A) -> B) -> MyList<B> {
-        // Ideally, this should be a method.
-        // However, this is needed to bypass some bugs which I'll be filing
-        // later.
         return mapFunction(list: self, mapper: mapper)
     } // map
 
